@@ -8,6 +8,7 @@ AutoHotKey script for automatic crafting in Star Stable Online.
 
 - Install AutoHotKey v1.1 for Windows or MacOS from <https://autohotkey.com> , the official website.
 - Download ZIP or clone this repository.
+- Read the [**Configuration**](https://github.com/am-yl/SSOAutoCrafting#configuration) part below.
 - Double click the script you want to run (.ahk extension should be linked to AutoHotkey).
   - If this is not the case, right click -> open with... AutoHotkey.
 
@@ -18,6 +19,7 @@ AutoHotKey script for automatic crafting in Star Stable Online.
   - You can select a different crafting recipe by the position (number) they appear in the list (1 to 8 for now) with the keys combination : **F9 + Number**. These are not the NumPad numbers but the ones **below** the Functions keys (F1-F12).
   - After selecting the crafting recipe, you can press **F9** in order to **start the script**.
   - To **stop the script**, press **F9** again.
+  - **If you want to stop the script at any moment,** you can press **F8** again to toggle it off.
 
 - Plant script
   - **Edit the script** according to your needs, especially which plant type you want to put in the planter.
@@ -25,6 +27,13 @@ AutoHotKey script for automatic crafting in Star Stable Online.
   - Press **P** to start the script once.
   - Redo with your mouse over a different planter.
   - When you are done, do not forget to **stop the script** by pressing **P** again.
+
+- Horse caring script
+  - This script will proceed to take care of the horse you are facing. This will pick their hooves, give them food and water, and brush them.
+  - **Face correctly** the horse you want to take care.
+  - Press **F8** to start the horse caring process.
+  - Wait for the script to end, it will notify you with a tooltip. It will deactivate itself.
+  - **If you want to stop the script at any moment,** you can press **F8** again to toggle it off.
 
 ## Configuration
 
