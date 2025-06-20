@@ -7,7 +7,6 @@ AutoHotKey script for automatic crafting in Star Stable Online.
 ## Usage
 
 - Install AutoHotKey v1.1 for Windows or MacOS from <https://autohotkey.com> , the official website.
-- Login to your Github Account.
 - Download ZIP or clone this repository.
 - Double click the script you want to run (.ahk extension should be linked to AutoHotkey).
   - If this is not the case, right click -> open with... AutoHotkey.
@@ -15,7 +14,15 @@ AutoHotKey script for automatic crafting in Star Stable Online.
 ## Features
 
 - Crafting script
-  - You can select
+  - You can select the crafting recipe by number (1 to 8) with the keys combination : **F9 + Number**. These are not the NumPad numbers but the ones **below** the Functions keys (F1-F12).
+  - After selecting the crafting recipe, you can press **F9** in order to **start the script**.
+  - To **stop the script**, press **F9** again.
+
+- Plant script
+  - **Edit the script** according to your needs, especially which plant type you want to put in the planter.
+  - Place your mouse cursor on the planter.
+  - Press **P** to start the script once.
+  - Redo with your mouse over a different planter.
 
 ## Configuration
 
@@ -45,9 +52,9 @@ Depending on your screen resolution and if you play SSO in fullscreen or windowe
 
 ## Credits
 
-- Maintained by: @am-yl and @NebSpacefarer
-- Based on the work of: @h669835
-- Licence: GNU General Public License v3.0
+- Maintained by: [@am-yl](https://github.com/am-yl) and [@NebSpacefarer](https://github.com/NebSpacefarer).
+- Based on the work of: [@h669835](https://github.com/h669835)
+- Licence: [GNU General Public License v3.0](https://github.com/am-yl/SSOAutoCrafting/blob/main/LICENSE)
 
 ## Additional Notes
 

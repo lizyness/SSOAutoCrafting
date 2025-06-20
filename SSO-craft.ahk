@@ -18,7 +18,7 @@ baseY := 385
 recipeOffsetY := 27
 
 ; Time to wait between each craft.
-; Default values : For Normal Workshop = 3000 , For Farah's Workshop = 5000 (longer animation)
+; Default values : For Normal Workshop = 3000 , For Farah's Workshop = 9000 (longer animation)
 craftAnimationTime := 3000
 
 ; Waiting time between each script action. For debugging purposes only.
