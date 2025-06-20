@@ -4,9 +4,10 @@ baseY := 440
 
 fertilizerOffset := -60
 hayOffset := 0       ; Hay is at baseY = 440
-jarOffset := 60      ; Jar is 60px bellow Hay
-garPowOffset := 90   ; Garden Powder is 90px below Hay.
-lightOffset := 210   ; Light is 210px below Hay.
+jarOffset := -25     ; Jar is 25px above Hay
+garPowOffset := 30   ; Garden Powder is 30px below Hay.
+lightOffset := 60   ; Light is 60px below Hay.
+purFabOff := 140    ; Purple Fabric
 
 toggle := false
 currentRecipeOffset := hayOffset  ; Default recipe is Hay
@@ -63,6 +64,14 @@ if (!toggle) {
 }
 return
 
+F9 & p::   ; F9 + P for Purple Fabric
+if (!toggle) {
+    currentRecipeOffset := purFabOff
+    ToolTip, Selected: Purple Fabric
+    SetTimer, RemoveTip, -1000
+}
+return
+
 ; Remove tooltip
 RemoveTip:
 ToolTip
@@ -90,5 +99,5 @@ CraftLoop:
     Click down
     Sleep, 40
     Click up
-    Sleep, 3000
+    Sleep, 9000 ; 9000 for Artisanat & 3000 for Crafting
 return
