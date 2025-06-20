@@ -14,7 +14,8 @@ AutoHotKey script for automatic crafting in Star Stable Online.
 ## Features
 
 - Crafting script
-  - You can select the crafting recipe by number (1 to 8) with the keys combination : **F9 + Number**. These are not the NumPad numbers but the ones **below** the Functions keys (F1-F12).
+  - By default, the first crafting recipe is selected (equivalent of pressing **F1 + 1**).
+  - You can select a different crafting recipe by the position (number) they appear in the list (1 to 8 for now) with the keys combination : **F9 + Number**. These are not the NumPad numbers but the ones **below** the Functions keys (F1-F12).
   - After selecting the crafting recipe, you can press **F9** in order to **start the script**.
   - To **stop the script**, press **F9** again.
 
@@ -23,6 +24,7 @@ AutoHotKey script for automatic crafting in Star Stable Online.
   - Place your mouse cursor on the planter.
   - Press **P** to start the script once.
   - Redo with your mouse over a different planter.
+  - When you are done, do not forget to **stop the script** by pressing **P** again.
 
 ## Configuration
 
