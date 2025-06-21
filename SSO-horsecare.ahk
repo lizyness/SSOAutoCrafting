@@ -40,9 +40,9 @@ HorseCareLoop:
     SetTimer, RemoveTip, -2000
 
     ; Picking Hooves
-    Send {e down}
+    Send {q down}
     Sleep, 100
-    Send {e up}
+    Send {q up}
     Sleep, 300
     MouseMove, (1044+offsetX), (385+offsetY)
     Click down
@@ -51,9 +51,9 @@ HorseCareLoop:
     Sleep, endWaitTime
 
     ; Eating Hay
-    Send {e down}
+    Send {q down}
     Sleep, 100
-    Send {e up}
+    Send {q up}
     Sleep, 300
     MouseMove, (1114+offsetX), (456+offsetY)
     Click down
@@ -67,9 +67,9 @@ HorseCareLoop:
     Sleep, endWaitTime
 
     ; Drinking
-    Send {e down}
+    Send {q down}
     Sleep, 100
-    Send {e up}
+    Send {q up}
     Sleep, 300
     MouseMove, (1136+offsetX), (547+offsetY)
     Click down
@@ -78,9 +78,9 @@ HorseCareLoop:
     Sleep, endWaitTime
 
     ; Brush
-    Send {e down}
+    Send {q down}
     Sleep, 100
-    Send {e up}
+    Send {q up}
     Sleep, 300
     MouseMove, (1120+offsetX), (638+offsetY)
     Click down
