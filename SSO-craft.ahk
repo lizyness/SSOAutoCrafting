@@ -9,13 +9,13 @@
 
 ; Base position of the first craftable item in workshop.
 ; Only baseY should be modified.
-; Default values: x: 800 , y: 380.
+; Default values: x: 800 , y: 355.
 baseX := 800
-baseY := 385
+baseY := 355
 
 ; Height of a recipe item, customizable depending on game resolution.
-; Default value: 30.
-recipeOffsetY := 27
+; Default value: 28.
+recipeHeight := 28
 
 ; Time to wait between each craft.
 ; Default values : For Normal Workshop = 3000 , For Farah's Workshop = 9000 (longer animation)
@@ -27,7 +27,7 @@ sleepTime := 100
 
 ; Dynamic variable for the script, leave untouched.
 toggle := false
-currentRecipeOffset := 0
+currentRecipeOffset := recipeHeight
 
 ; Main toggle key, allowing to start and stop the script at ease. Default : F9
 F9::
@@ -46,7 +46,7 @@ return
 ; Hotkeys by numbers
 F9 & 1::
 if (!toggle) {
-    currentRecipeOffset := recipeOffsetY
+    currentRecipeOffset := recipeHeight
     ToolTip, Selected: First item
     SetTimer, RemoveTip, -1000
 }
@@ -54,7 +54,7 @@ return
 
 F9 & 2::
 if (!toggle) {
-    currentRecipeOffset := recipeOffsetY * 2
+    currentRecipeOffset := recipeHeight * 2
     ToolTip, Selected: Second item
     SetTimer, RemoveTip, -1000
 }
@@ -62,7 +62,7 @@ return
 
 F9 & 3::
 if (!toggle) {
-    currentRecipeOffset := recipeOffsetY * 3
+    currentRecipeOffset := recipeHeight * 3
     ToolTip, Selected: Third item
     SetTimer, RemoveTip, -1000
 }
@@ -70,7 +70,7 @@ return
 
 F9 & 4::
 if (!toggle) {
-    currentRecipeOffset := recipeOffsetY * 4
+    currentRecipeOffset := recipeHeight * 4
     ToolTip, Selected: Fourth item
     SetTimer, RemoveTip, -1000
 }
@@ -78,7 +78,7 @@ return
 
 F9 & 5::
 if (!toggle) {
-    currentRecipeOffset := recipeOffsetY * 5
+    currentRecipeOffset := recipeHeight * 5
     ToolTip, Selected: Fifth item
     SetTimer, RemoveTip, -1000
 }
@@ -86,7 +86,7 @@ return
 
 F9 & 6::
 if (!toggle) {
-    currentRecipeOffset := recipeOffsetY * 6
+    currentRecipeOffset := recipeHeight * 6
     ToolTip, Selected: Sixth item
     SetTimer, RemoveTip, -1000
 }
@@ -94,7 +94,7 @@ return
 
 F9 & 7::
 if (!toggle) {
-    currentRecipeOffset := recipeOffsetY * 7
+    currentRecipeOffset := recipeHeight * 7
     ToolTip, Selected: Seventh item
     SetTimer, RemoveTip, -1000
 }
@@ -102,7 +102,7 @@ return
 
 F9 & 8::
 if (!toggle) {
-    currentRecipeOffset := recipeOffsetY * 8
+    currentRecipeOffset := recipeHeight * 8
     ToolTip, Selected: Eighth item
     SetTimer, RemoveTip, -1000
 }
@@ -115,12 +115,10 @@ return
 
 ; Crafting loop
 CraftLoop:
-    ; Click crafting bench
-    MouseMove, 920, 620
-    Click down
-    Sleep, sleepTime
-    Click up
-    Sleep, sleepTime
+    ; Open crafting bench
+    Send {e down}
+    Sleep, 100
+    Send {e up}
 
     ; Move to selected recipe
     recipeY := baseY + currentRecipeOffset
@@ -131,9 +129,10 @@ CraftLoop:
     Sleep, sleepTime
 
     ; Click 'Yes' button
-    MouseMove, 1200, 725 ; Default value: 1200, 700
+    MouseMove, 1200, 700 ; Default value: 1200, 700
     Click down
     Sleep, sleepTime
     Click up
     Sleep, craftAnimationTime
+    Sleep, sleepTime
 return
