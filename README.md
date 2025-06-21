@@ -15,6 +15,7 @@ AutoHotKey script for automatic crafting in Star Stable Online.
 ## Features
 
 - Crafting script
+  - *This script will proceed to craft in a loop the same chosen item on a Valedale's Workshop or Farah's Workshop.*
   - By default, the first crafting recipe is selected (equivalent of pressing **F1 + 1**).
   - You can select a different crafting recipe by the position (number) they appear in the list (1 to 8 for now) with the keys combination : **F9 + Number**. These are not the NumPad numbers but the ones **below** the Functions keys (F1-F12).
   - After selecting the crafting recipe, you can press **F9** in order to **start the script**.
@@ -22,6 +23,7 @@ AutoHotKey script for automatic crafting in Star Stable Online.
   - **If you want to stop the script at any moment,** you can press **F8** again to toggle it off.
 
 - Plant script
+  - *This script will let you automatically put a chosen plant (with an optional fertilizer) in a Valedale's Garden planter.*
   - **Edit the script** according to your needs, especially which plant type you want to put in the planter.
   - Place your mouse cursor on the planter.
   - Press **P** to start the script once.
@@ -29,7 +31,7 @@ AutoHotKey script for automatic crafting in Star Stable Online.
   - When you are done, do not forget to **stop the script** by pressing **P** again.
 
 - Horse caring script
-  - This script will proceed to take care of the horse you are facing. This will pick their hooves, give them food and water, and brush them.
+  - *This script will proceed to take care of the horse you are facing. This will pick their hooves, give them food and water, and brush them.*
   - **Face correctly** the horse you want to take care.
   - Press **F8** to start the horse caring process.
   - Wait for the script to end, it will notify you with a tooltip. It will deactivate itself.
@@ -41,7 +43,7 @@ Depending on your screen resolution and if you play SSO in fullscreen or windowe
 
 - Right click on the script you want to run and open with your favorite code editor (Notepad++ is a common choice on Windows).
 - Edit the first variables according to the comments inside the script.
-- Reload the script in AutoHotkey. Click on AutoHotkey task bar menu -> Reload this script.
+- If already launched, reload the script in AutoHotkey. Click on AutoHotkey task bar menu -> Reload this script.
 - Test it in game. Redo these steps again if necessary.
 
 ## FAQ
