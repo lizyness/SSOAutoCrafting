@@ -119,6 +119,7 @@ CraftLoop:
     Send {e down}
     Sleep, 100
     Send {e up}
+    Sleep, 300
 
     ; Move to selected recipe
     recipeY := baseY + currentRecipeOffset
