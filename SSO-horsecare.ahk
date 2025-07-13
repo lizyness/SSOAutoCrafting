@@ -99,3 +99,7 @@ RemoveTip:
     ToolTip
 return
 
+; --- Optional: Press F4 to exit the script ---
+F4::
+    ExitApp
+return

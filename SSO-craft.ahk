@@ -108,6 +108,22 @@ if (!toggle) {
 }
 return
 
+F9 & 8::
+if (!toggle) {
+    currentRecipeOffset := recipeHeight * 9
+    ToolTip, Selected: Eighth item
+    SetTimer, RemoveTip, -1000
+}
+return
+
+F9 & 8::
+if (!toggle) {
+    currentRecipeOffset := recipeHeight * 10
+    ToolTip, Selected: Eighth item
+    SetTimer, RemoveTip, -1000
+}
+return
+
 ; Remove tooltip
 RemoveTip:
 ToolTip
@@ -136,4 +152,9 @@ CraftLoop:
     Click up
     Sleep, craftAnimationTime
     Sleep, sleepTime
+return
+
+; --- Optional: Press F4 to exit the script ---
+F4::
+    ExitApp
 return

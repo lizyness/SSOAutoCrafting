@@ -2,7 +2,11 @@
 
 ## Description
 
-AutoHotKey script for automatic crafting in Star Stable Online.
+AutoHotKey script for automatic actions in Star Stable Online.
+The following actions are supported :
+- Auto crafting in Valedale's menus
+- Planting and fertilizing Valedale's Garden
+- Horse Care
 
 ## Usage
 
@@ -14,28 +18,30 @@ AutoHotKey script for automatic crafting in Star Stable Online.
 
 ## Features
 
-- Crafting script
-  - *This script will proceed to craft in a loop the same chosen item on a Valedale's Workshop or Farah's Workshop.*
-  - By default, the first crafting recipe is selected (equivalent of pressing **F1 + 1**).
-  - You can select a different crafting recipe by the position (number) they appear in the list (1 to 8 for now) with the keys combination : **F9 + Number**. These are not the NumPad numbers but the ones **below** the Functions keys (F1-F12).
-  - After selecting the crafting recipe, you can press **F9** in order to **start the script**.
-  - To **stop the script**, press **F9** again.
-  - **If you want to stop the script at any moment,** you can press **F8** again to toggle it off.
+- You can **exit** all the scripts with **F4**. The key can be edited at the end of each script and be different for each one.
 
-- Plant script
-  - *This script will let you automatically put a chosen plant (with an optional fertilizer) in a Valedale's Garden planter.*
-  - **Edit the script** according to your needs, especially which plant type you want to put in the planter.
-  - Place your mouse cursor on the planter.
-  - Press **P** to start the script once.
+### Plant & Fertilizer script
+  *This script will let you automatically put a chosen plant and/or fertilizer in a Valedale's Garden planter.*
+  - By default, the **FLAX** is selected (equivalent of pressing **F7 + 3**).
+  - Place your mouse cursor on the empty planter.
+  - You can select a different plant by the position (number) they appear in the list (1 to 6) with the keys combination : **F7 + Number**. These are not the NumPad numbers but the ones **below** the Functions keys (F1-F12).
+  - You can also select a fertilizer by using the position they appear in the row (7 to 9)
+  - Press **F7** to start the script once.
   - Redo with your mouse over a different planter.
-  - When you are done, do not forget to **stop the script** by pressing **P** again.
+  - You can reset the script by using **F7 + 0** ; you **must** select either a plant or a fertilizer to run the script again. *It won't work otherwise.*
 
-- Horse caring script
-  - *This script will proceed to take care of the horse you are facing. This will pick their hooves, give them food and water, and brush them.*
+### Horse caring script
+  *This script will proceed to take care of the horse you selected. This will pick their hooves, give them food and water, and brush them.*
   - **Face correctly** the horse you want to take care.
   - Press **F8** to start the horse caring process.
   - Wait for the script to end, it will notify you with a tooltip. It will deactivate itself.
-  - **If you want to stop the script at any moment,** you can press **F8** again to toggle it off.
+
+### Crafting script
+  *This script will proceed to craft in a loop the same chosen item on a Valedale's Workshop or Farah's Workshop. You must edit the script to change the waiting time for Farah's Workshop, because the animations are longer.*
+  - By default, the first crafting recipe is selected (equivalent of pressing **F9 + 1**).
+  - You can select a different crafting recipe by the position (number) they appear in the list (1 to 10 for now 10 being setup by pressing F9 + 0) with the keys combination : **F9 + Number**. These are not the NumPad numbers but the ones **below** the Functions keys (F1-F12).
+  - After selecting the crafting recipe, you can press **F9** in order to **start the script**.
+  - To **stop the script**, press **F9** again.
 
 ## Configuration
 
@@ -48,19 +54,19 @@ Depending on your screen resolution and if you play SSO in fullscreen or windowe
 
 ## FAQ
 
-- *Is using these auto-clicker scripts considered cheating?*
+### *Is using these auto-clicker scripts considered cheating?*
 - **Technically, no.** SSO staff is aware of the use of autoclickers and have regularly reassured concerned players that this is not considered cheating and is fine only when used for repetitive tasks. This does not give advantages in tournaments and races.
 
-- *Can I edit the scripts/open a pull request?*
+### *Can I edit the scripts/open a pull request?*
 - **Yes!** Feel free to enhance them, or even just give suggestions by opening an issue.
 
-- *This is awesome, can I do something to thank you?*
+###  *This is awesome, can I do something to thank you?*
 - You can open an issue just to thank us, we would be glad to see our work being useful to people! If you would like to donate, please consider donating to your local animal shelter.
 
-- *Can you create a script to be better at racing/collect lights faster/train horses?*
+###  *Can you create a script to be better at racing/collect lights faster/train horses?*
 - **No!** We like playing games fairly in respect of the other players, and for ourselves to enjoy the game as it is intended to be. According to SSO Staff statements and Terms of Services, we will not release hacks/scripts that give out advantages in races, tournaments, or players/horses development.
 
-- *I need help! Can you help me?*
+###  *I need help! Can you help me?*
 - **Maybe!** Please check if your problem has been already solved in another issue, and then open a new one describing correctly the issue(s) you are facing. We will try our best to help you!
 
 ## Credits
@@ -71,6 +77,6 @@ Depending on your screen resolution and if you play SSO in fullscreen or windowe
 
 ## Additional Notes
 
-- *We are not affiliated with SSO nor AutoHotkey.*
+*We are not affiliated with SSO nor AutoHotkey.*
 
-- *We are releasing these scripts as is, without any warranty nor guarantee. Desktop automation can cause harm to your computer environment if you are not an advanced user, so please refrain from using these scripts and AutoHotkey before reading the software wiki and usage guidelines.*
+*We are releasing these scripts as is, without any warranty nor guarantee. Desktop automation can cause harm to your computer environment if you are not an advanced user, so please refrain from using these scripts and AutoHotkey before reading the software wiki and usage guidelines.*
