@@ -108,7 +108,7 @@ if (!toggle) {
 }
 return
 
-F9 & 8::
+F9 & 9::
 if (!toggle) {
     currentRecipeOffset := recipeHeight * 9
     ToolTip, Selected: Eighth item
@@ -116,7 +116,7 @@ if (!toggle) {
 }
 return
 
-F9 & 8::
+F9 & 0::
 if (!toggle) {
     currentRecipeOffset := recipeHeight * 10
     ToolTip, Selected: Eighth item
