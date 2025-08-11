@@ -162,6 +162,6 @@ ToolTip
 return
 
 ; --- Optional: Press F4 to exit the script ---
-F4::
+F7 & F4::
     ExitApp
 return

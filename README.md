@@ -18,7 +18,7 @@ The following actions are supported :
 
 ## Features
 
-- You can **exit** all the scripts with **F4**. The key can be edited at the end of each script and be different for each one.
+- You can **exit** all each scripts with it's main key and **F4**. The keys can  be edited at the end of each script. For exemple, **F7 + F4** will exit the Plant script.
 
 ### Plant & Fertilizer script
   *This script will let you automatically put a chosen plant and/or fertilizer in a Valedale's Garden planter.*

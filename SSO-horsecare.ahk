@@ -100,6 +100,6 @@ RemoveTip:
 return
 
 ; --- Optional: Press F4 to exit the script ---
-F4::
+F8 & F4::
     ExitApp
 return

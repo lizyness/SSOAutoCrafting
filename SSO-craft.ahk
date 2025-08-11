@@ -155,6 +155,6 @@ CraftLoop:
 return
 
 ; --- Optional: Press F4 to exit the script ---
-F4::
+F9 & F4::
     ExitApp
 return
