@@ -71,7 +71,7 @@ Depending on your screen resolution and if you play SSO in fullscreen or windowe
 
 ## Credits
 
-- Maintained by: [@am-yl](https://github.com/am-yl) and [@NebSpacefarer](https://github.com/NebSpacefarer).
+- Maintained by: [@Lizyness](https://github.com/lizyness) and [@NebSpacefarer](https://github.com/NebSpacefarer).
 - Based on the work of: [@h669835](https://github.com/h669835)
 - Licence: [GNU General Public License v3.0](https://github.com/am-yl/SSOAutoCrafting/blob/main/LICENSE)
 
